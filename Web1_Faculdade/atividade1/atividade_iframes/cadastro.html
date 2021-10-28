@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form form method="post" action="tabela_produtos.html" target="_blank">
+        <fieldset style="width:100px">
+            <legend>Cadastre-se:</legend>
+            <table>
+                <tr>
+                    <td align="right">Nome </td>
+                    <td align="left"><input type="text" size="30" maxlength="50" name="nome" /></td>
+                </tr>
+
+                <tr>
+                    <td align="right">Endereço </td>
+                    <td align="left"><input type="text" size="30" maxlength="50" name="endereço" /></td>
+                </tr>
+
+                <tr>
+                    <td align="right">Email </td>
+                    <td align="left"><input type="text" size="30" maxlength="50" name="email" /></td>
+                </tr>
+
+                <tr>
+                    <td align="right">Gênero </td>
+                    <td colspan="2" align="left">
+                        <input type="radio" name="genero" value="mas" checked> Masculino</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td align="left"><input type="radio" name="genero" value="fem"> feminino</td>
+                </tr>
+
+                <tr>
+                    <td align="right">Hobbies </td>
+                    <td align="left">
+                        <input type="checkbox" name="pescar" value="sim " /> pescar
+                        <input type="checkbox" name="dormir" value="sim " /> estudar <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td align="left">
+                        <input type="checkbox" name="estudar" value="sim " /> dormir
+                        <input type="checkbox" name="namorar" value="sim " /> namorar <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="right">Sugetões </td>
+                    <td><textarea rows="5" cols="20">uma mensagem aqui ...</textarea></td>
+                </tr>
+
+            </table>
+
+            
+            <input type="submit"  value="Enviar" />
+            <input type="reset"  value="Zerar" />
+            
+            
+        </fieldset>
+            
+    </form>
+</body>
+</html>
