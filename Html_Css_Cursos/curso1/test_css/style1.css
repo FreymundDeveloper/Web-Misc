@@ -1,0 +1,46 @@
+p{
+    color: #FF7F50;
+    font-size: 40px;
+    font-family: asdf, arial, "Times new roman";
+}
+
+body{
+    background-color: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: green;
+    height: 100px;
+}
+
+footer{
+    clear: both;
+    background-color: blue;
+    height: 50px;
+}
+
+#barra_inicial{
+    background-color: violet;
+    min-height: 50px;
+    width: 100%;
+    float: top;
+}
+
+#div_esquerda{
+    background-color: red;
+    min-height: 200px;
+    width: 40%;
+    float: right;
+}
+
+#div_direita{
+    background-color: yellow;
+    min-height: 200px;
+    width: 60%;
+    float: right;
+}
