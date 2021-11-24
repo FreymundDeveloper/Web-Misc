@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade2</title>
+</head>
+<body>
+    <script>
+        let primiero_numero, segundo_numero, terceiro_numero, quarto_numero, menor_valor, maior_valor;
+
+        primiero_numero = window.prompt( "Digite o primeiro numero", "0" );
+        segundo_numero = window.prompt( "Digite o segundo numero", "0" );
+        terceiro_numero = window.prompt("Digite o terceiro numero", "0");
+        quarto_numero = window.prompt("Digite o quarto numero", "0");
+
+        primiero_numero = parseInt(primiero_numero); 
+        segundo_numero = parseInt(segundo_numero); 
+        terceiro_numero = parseInt(terceiro_numero);
+        quarto_numero = parseInt(quarto_numero);
+
+        maior_valor = primiero_numero;
+        menor_valor = primiero_numero;
+
+        if (maior_valor < segundo_numero) {
+            maior_valor = segundo_numero;
+        }
+        if (maior_valor < terceiro_numero) {
+            maior_valor = terceiro_numero;
+        }
+        if (maior_valor < quarto_numero) {
+            maior_valor = quarto_numero;
+        };
+
+        if (menor_valor > segundo_numero) {
+            menor_valor = segundo_numero;
+        }
+        if (menor_valor > terceiro_numero) {
+            menor_valor = terceiro_numero;
+        }
+        if (menor_valor > quarto_numero) {
+            menor_valor = quarto_numero
+        };
+
+        document.writeln( "<h1>Maior valor:" + maior_valor + "; Menor valor:"+ menor_valor + ".</h1>" );
+    </script>
+    
+</body>
+</html>
