@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade1</title>
+</head>
+<body>
+    <script>
+        let primiero_numero, segundo_numero, terceiro_numero, valor_media;
+
+        primiero_numero = window.prompt( "Digite o primeiro numero", "0" );
+        segundo_numero = window.prompt( "Digite o segundo numero", "0" );
+        terceiro_numero = window.prompt("Digite o terceiro numero", "0")
+
+        valor_media = parseInt(primiero_numero); 
+        valor_media += parseInt(segundo_numero); 
+        valor_media += parseInt(terceiro_numero); 
+
+        if((valor_media / 3) < 7){
+            document.writeln( "<h1>A média é " + (valor_media/3) + ", ou seja, menor do que 7.</h1>" );
+        }
+        else if ((valor_media / 3) > 7) {
+            document.writeln( "<h1>A média é " + (valor_media/3) + ", ou seja, maior do que 7.</h1>" );
+        }
+        else if ((valor_media / 3) == 7) {
+            document.writeln( "<h1>A média é " + (valor_media/3) + ", ou seja, igual do que 7.</h1>" );
+        };
+
+    </script>
+    
+</body>
+</html>
