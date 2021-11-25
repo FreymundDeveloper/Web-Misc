@@ -7,6 +7,29 @@
     <title>Atividade1</title>
 </head>
 <body>
-    
+    <script>
+        let vetor, contador, impares;
+
+        vetor = [];
+        contador = 0;
+        impares = [];
+
+        while (contador < 5) {
+            vetor.push(window.prompt( "Digite um numero", "0" ))
+            contador += 1;
+        }
+
+        contador = 0;
+
+        while (contador < 5) {
+            if (vetor[contador] % 2 == 1) {
+                impares.push(vetor[contador])
+            }
+            contador += 1;
+        }
+
+        document.writeln( "<h1>Numeros impares digitados: " + impares + "</h1>" );
+
+    </script>
 </body>
 </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade2</title>
+</head>
+<body>
+    <script>
+        let vetor, contador;
+
+        vetor = [];
+        contador = 0;
+
+        while (contador < 5) {
+            vetor.push(window.prompt( "Digite um numero real", "0.0" ))
+            contador += 1;
+        }
+
+        function media(lista) {
+            let quantidade, soma;
+
+            quantidade = parseInt(lista.length);
+            soma = parseFloat(0);
+
+            for (let i = 0; i < lista.length; i++) {
+                soma += parseFloat(lista[i]);
+            }
+
+            return (soma/quantidade).toFixed(2);
+        }
+
+
+        document.writeln( "<h1>Media: " + media(vetor) + "</h1>" );
+
+    </script>
+</body>
+</html>
