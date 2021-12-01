@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    font-family: Arial;
+}
+
+#imagem {
+    width: 100%;
+    height: 100vh;
+    background: url(Imagem_aleatoria.png) no-repeat;
+    background-size: 100% 95%;
+    background-color: darkred;
+}
+
+nav {
+    background-color: darkred;
+    border-bottom: darksalmon;
+    height: 50px;
+    width: 100%;
+}
+
+#logo {
+    color: gold;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+#menu {
+    list-style: none;
+    float: right;
+    margin-top: 17px;
+}
+
+.item {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.item a{
+    color: silver;
+    text-decoration: none;
+}
+
+.item a:hover {
+    color: darksalmon;
+    transition: .5s;
+}
