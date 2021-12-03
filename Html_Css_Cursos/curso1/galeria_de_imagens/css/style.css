@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+}
+
+body {
+    background-color: black;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: blue;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: blue;
+}
+
+#introdução {
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    width: 300px;
+    margin: 30px;
+    border: 2px solid blue;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card-image {
+    height: 300px;
+    background-size: cover;
+    width: 280px;
+    margin: 5px;
+    border: 1px solid blue;
+    padding-right: 5px;
+    padding-left: 3px;
+    border-radius: 5px;
+}
+
+.card-1 .card-image {
+    background-image: url("../img/imagem1.jfif");
+}
+
+.card-2 .card-image {
+    background-image: url("../img/imagem2.jfif");
+}
+
+.card-3 .card-image {
+    background-image: url("../img/imagem3.jfif");
+}
+
+.btn {
+    display: block;
+    background-color: blue;
+    color: rgb(245, 245, 245);
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 10px;
+    border: 10px solid transparent;
+    font-weight: bold;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: black;
+    color: rgb(245, 245, 245);
+    border-color: blue;
+}
+
+.card-description {
+    padding: 20px 10px;
+}
