@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade2</title>
+</head>
+<body>
+    <script>
+        let valor_digitado = parseFloat(window.prompt( "Informe o Raio do circulo", "0" ));
+        let circulo = {
+            raio: valor_digitado,
+            area: function() {
+                let calculo = Math.PI * (valor_digitado * valor_digitado);
+                return calculo;
+            },
+        }
+
+        document.writeln( "<h1>Area do circulo = " + circulo.area() + "<br>Area do circulo(Arredondada) = " + Math.round(circulo.area()) + "</h1>" );
+    </script>
+</body>
+</html>
