@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma</title>
+</head>
+<body onload="mensagemInicial()">
+
+    <h1>Soma</h1>
+
+    <p>
+        <input id="lable1" type="text" onfocus="destaque(this)" onblur="semDestaque(this)"> + 
+        <input id="lable2" type="text" onfocus="destaque(this)" onblur="semDestaque(this)">
+        <button onclick="somar()">=</button>
+        <i id="result"></i>
+    </p>
+
+    <p id="ajuda" style="color: black;">Ajuda: </p>
+
+    <p>
+        Testando cor de texto
+        <button style="background-color: red;" onmouseover="red()" onmouseout="normal()">.</button>
+        <button style="background-color: yellow;" onmouseover="yellow()" onmouseout="normal()">.</button>
+        <button style="background-color: blue;" onmouseover="blue()" onmouseout="normal()">.</button>
+    </p>
+
+    <script>
+        let ajuda = ["informe um operador"]
+
+        function mensagemInicial() {
+            alert("Calcula Soma");
+        }
+
+        function destaque(x) {
+            x.style.background = "blue";
+            document.getElementById("ajuda").innerHTML = "Ajuda: informe um operando";
+        }
+
+        function semDestaque(x) {
+            x.style.background = "white";
+            document.getElementById("ajuda").innerHTML = "Ajuda:";
+        }
+
+        function somar() {
+            let valor1 = parseInt(document.getElementById('lable1').value)
+            let valor2 = parseInt(document.getElementById('lable2').value)
+            document.getElementById('result').innerHTML = valor1 + valor2;
+        }
+
+        function normal() {
+            document.getElementById("result").style.color = "black"
+        }
+
+        function red() {
+            document.getElementById("result").style.color = "red"
+        }
+
+        function yellow() {
+            document.getElementById("result").style.color = "yellow"
+        }
+
+        function blue() {
+            document.getElementById("result").style.color = "blue"
+        }
+    </script>
+    
+</body>
+</html>
