@@ -50,3 +50,208 @@ h2 {
 #navbar-list li a:hover {
     border-bottom: 1px solid white;
 }
+
+#main-banner {
+    height: 70vh;
+    background-image: url('../img/plano-de-fundo.jpg');
+    background-size: cover;
+    padding-top: 15vh;
+}
+
+#banner-info {
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    color: white;
+    padding: 50px;
+}
+
+#banner-info img {
+    height: 120px;
+    border:4px solid rgb(14, 14, 110);
+    border-radius: 50%;
+    background-color: rgb(14, 14, 110);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#banner-info h1 {
+    text-shadow: -1px -1px 0px rgb(14, 14, 110), 
+                 -1px 1px 0px rgb(14, 14, 110), 
+                 1px -1px 0px rgb(14, 14, 110), 
+                 1px 0px 0px rgb(14, 14, 110);
+}
+
+#banner-info p {
+    background-color: rgb(14, 14, 110);
+    font-weight: bold;
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+}
+
+#about-section {
+    text-align: center;
+    background-color: rgb(14, 14, 110);
+    color: white;
+    padding-top: 50px;
+    height: 350px;
+}
+
+#about-section h2 {
+    margin-bottom: 20px;
+}
+
+#about-section p {
+    max-width: 650px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 30px;
+}
+
+#skills-section {
+    margin-top: -200px;
+    background-color: white;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+#skills-section .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.skills-container {
+    flex: 1 1 1;
+    width: 100%;
+    text-align: center;
+    padding: 60px 25px;
+}
+
+.central {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.skills-container h3 {
+    color: rgb(14, 14, 110);
+    font-size: 20px;
+}
+
+.skills-container img {
+    height: 60px;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-top: 1px solid rgb(14, 14, 110);
+    border-left: 1px solid rgb(14, 14, 110);
+    border-bottom: 4px solid rgb(14, 14, 110);
+    border-right: 4px solid rgb(14, 14, 110);
+}
+
+.skills-container .subtitle {
+    font-weight: bold;
+    color: rgb(14, 14, 110);
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.skills-container p {
+    line-height: 25px;
+}
+
+#jobs-section {
+    text-align: center;
+    padding-top: 50px;
+}
+
+#jobs-section h2 {
+    color: rgb(14, 14, 110);
+    margin-bottom: 30px;
+}
+
+#jobs-section p {
+    margin-bottom: 50px;
+}
+
+#jobs-section a {
+    font-weight: bold;
+    color: rgb(14, 14, 110);
+}
+
+.job-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.job-box {
+    flex: 1 1 200px;
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 200px;
+    border:1px solid black;
+    background-size: cover;
+    border-right: 5px solid rgb(14, 14, 110);
+    border-bottom: 5px solid rgb(14, 14, 110);
+}
+
+.proj1 {
+    background-image: url('../img/proj1.png');
+}
+
+.proj2 {
+    background-image: url('../img/proj2.png');
+}
+
+.proj3 {
+    background-image: url('../img/proj3.png');
+}
+
+footer {
+    padding: 50px 0;
+    background-color: rgb(14, 14, 110);
+    color: white;
+    text-align: center;
+}
+
+footer img {
+    height: 50px;
+    background-size: cover;
+    border:4px solid white;
+    border-radius: 30%;
+    margin: 20px;
+}
+
+footer p {
+    margin-top: 25px;
+    text-align: center;
+}
+
+footer form {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer input, footer textarea {
+    border: none;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+}
+
+footer .detail {
+    font-weight: bold;
+}
