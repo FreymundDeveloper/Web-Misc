@@ -255,3 +255,101 @@ footer input, footer textarea {
 footer .detail {
     font-weight: bold;
 }
+
+/*Estrutura mobile*/
+
+@media(max-width: 450px) {
+
+    p, input, textarea, #navbar-list li a {
+        font-size: 1.2rem;
+    }
+
+    #navbar h2 {
+        display: none;
+    }
+
+    #navbar img {
+        top: 9px;
+    }
+
+    #navbar ul {
+        margin-top: 1.1rem;
+    }
+
+    #main-banner {
+        height: 40vh;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+    }
+
+    #banner-info {
+        width: 60%;
+    }
+
+    #banner-info p {
+        margin: 0;
+        width: auto;
+    }
+
+    #about-section {
+        padding: 2rem;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    #skills-section {
+        margin-top: -50px;
+        width: 90%;
+    }
+
+    #skills-section .container {
+        flex-direction: column;
+    }
+
+    .skills-container {
+        width: auto;
+    }
+
+    .skills-container h3, .skills-container .subtitle {
+        font-size: 1.3rem;
+    }
+
+    .skills-container {
+        padding: 25px;
+        text-align: center;
+    }
+
+    .skills-container.central {
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
+
+    #jobs-section h2, #jobs-section p {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .job-container {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .job-box {
+        margin-bottom: 2rem;
+        flex: 1 1 300px;
+    }
+
+    footer {
+        padding: 50px 15px;
+    }
+
+    footer form {
+        width: 100%;
+    }
+
+    .detail {
+        margin-top: 10px;
+        display: block;
+    }
+}
