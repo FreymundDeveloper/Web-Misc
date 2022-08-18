@@ -9,6 +9,9 @@ export default function Inicio() {
             <Navegador texto='Exemplo' destino='/exemplo'/>
             <Navegador texto='Navegação 1' destino='/navegacao'/>
             <Navegador texto='Navegação 2' destino='/cliente/sp-2/123'/>
+            <Navegador texto='State' destino='/estado'/>
+            <Navegador texto='API' destino='/integracao1'/>
+            
         </div>
     )
 }
