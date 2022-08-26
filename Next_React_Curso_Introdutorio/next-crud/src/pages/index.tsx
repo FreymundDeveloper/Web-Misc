@@ -1,4 +1,5 @@
 import { ClientRequest } from "http";
+import Botao from "../components/Botao";
 import Layout from "../components/Layout";
 import Tabela from "../components/Tabela";
 import Cliente from "../core/Cliente";
@@ -23,6 +24,9 @@ export default function Home() {
       text-white
     `}>
       <Layout titulo='Cadastro'>
+        <div className="flex justify-end">
+          <Botao cor="blue" className="mb-4">Novo Cliente</Botao>
+        </div>
         <Tabela clientes={clientes} 
           clienteSelect={clientSelect}
           clienteDelet={clientDelet}
