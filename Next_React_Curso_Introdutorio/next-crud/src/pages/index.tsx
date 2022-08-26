@@ -1,5 +1,6 @@
 import { ClientRequest } from "http";
 import Botao from "../components/Botao";
+import Formulario from "../components/Formulario";
 import Layout from "../components/Layout";
 import Tabela from "../components/Tabela";
 import Cliente from "../core/Cliente";
@@ -31,6 +32,7 @@ export default function Home() {
           clienteSelect={clientSelect}
           clienteDelet={clientDelet}
           />
+          <Formulario cliente={clientes[1]}></Formulario>
       </Layout>
     </div>
   )
