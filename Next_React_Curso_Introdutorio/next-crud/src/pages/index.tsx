@@ -1,4 +1,5 @@
 import { ClientRequest } from "http";
+import { useState } from "react";
 import Botao from "../components/Botao";
 import Formulario from "../components/Formulario";
 import Layout from "../components/Layout";
@@ -7,6 +8,9 @@ import Cliente from "../core/Cliente";
 
 export default function Home() {
 
+  const [visivel, setVisivel] = useState<'tabela' | 'form'>('tabela')
+  const [cliente, setCliente] = useState<Cliente>(Cliente.vazio())
+
   const clientes = [
     new Cliente('Jack', 34, '1'),
     new Cliente('John', 73, '2'),
@@ -14,9 +18,21 @@ export default function Home() {
     new Cliente('Tedd', 44, '4'),
   ]
 
-  function clientSelect (cliente: Cliente) {}
+  function clientSelect (cliente: Cliente) {
+    setCliente(cliente)
+    setVisivel('form')
+  }
 
   function clientDelet (cliente: Cliente) {}
+
+  function clientNew () {
+    setCliente(Cliente.vazio())
+    setVisivel('form')
+  }
+
+  function clientSave (cliente: Cliente) {
+    setVisivel('tabela')
+  }
 
   return (
     <div className={`
@@ -25,14 +41,27 @@ export default function Home() {
       text-white
     `}>
       <Layout titulo='Cadastro'>
-        <div className="flex justify-end">
-          <Botao cor="blue" className="mb-4">Novo Cliente</Botao>
-        </div>
-        <Tabela clientes={clientes} 
-          clienteSelect={clientSelect}
-          clienteDelet={clientDelet}
+        {visivel === 'tabela' ? (
+          <>
+            <div className="flex justify-end">
+              <Botao cor="blue" className="mb-4" 
+                onClick={clientNew}>
+                Novo Cliente
+              </Botao>
+            </div>
+            <Tabela clientes={clientes} 
+              clienteSelect={clientSelect}
+              clienteDelet={clientDelet}
+            />
+          </>
+
+        ) : (
+          <Formulario 
+          cliente={cliente}
+          clienteMudou={clientSave}
+          cancelado={() =>  setVisivel('tabela')}
           />
-          <Formulario cliente={clientes[1]}></Formulario>
+        )}
       </Layout>
     </div>
   )
