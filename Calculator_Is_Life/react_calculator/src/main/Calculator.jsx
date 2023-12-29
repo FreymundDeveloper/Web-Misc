@@ -37,6 +37,10 @@ export default class Calculator extends Component {
 
             try {
                 result = this.calculateResult(values[0], values[1], (this.state.operation));
+                if (isNaN(result) || !isFinite(result)) {
+                    this.clearMemory();
+                    return;
+                }
             } catch(event) {
                 result = values[0];
             }
