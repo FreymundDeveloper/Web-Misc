@@ -10,6 +10,33 @@
 
 <body>
 
+    <div id="app">
+        <div class="container">
+            <h1 class="mt-3">{{ title }}</h1>
+
+            <table class="mt-5 table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>stock</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="sale in sales">
+                        <td>{{ sale.id }}</td>
+                        <td>{{ sale.name }}</td>
+                        <td v-money="'R$'">{{ sale.price }}</td>
+                        <td>{{ sale.qtde }}</td>
+                        <td>{{ sale.date }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
     <script src="./js/builder.js"></script>
 </body>
 
