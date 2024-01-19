@@ -12,7 +12,7 @@ Set of varied small web applications. Some tecnologies used:
 * React;
 * TailwindCSS;
 * Firebase;
-* Vue;
+* Vue(2.x);
 * Jest.
 
 Main applications present in the repository.
@@ -24,7 +24,7 @@ Main applications present in the repository.
 * /Html_Css_Cursos/curso3/guess_number: A number guessing game;
 * /Html_Css_Cursos/curso3/star_devs: A web application that consumes an API and generates random phrases related to Star Wars;
 * /Next_React_Curso_Introdutorio/next-crud: A simple login system, developed with Next(TypeScript) and linked to Firebase;
-* /Table_Builder: A Json content converter into tables, made with Vue.
+* /Table_Builder: A Json content converter into tables, made with Vue;
 * /Web1_Faculdade/P_H_P: Form and login treatments with PHP;
 
 ## Running the apps
