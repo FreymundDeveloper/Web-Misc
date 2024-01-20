@@ -1,6 +1,6 @@
 <template>
     <div class="display">
-        {{ value }}
+        <div class="number">{{ value }}</div>
     </div>
 </template>
 
@@ -21,5 +21,16 @@ export default {
         padding: 20px;
         font-size: 2.1em;
         overflow: hidden;
+    }
+
+    .number {
+        font-size: 1em;
+        white-space: nowrap;
+        transform-origin: right;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .display:hover .number {
+        transform: scaleX(0.37);
     }
 </style>
