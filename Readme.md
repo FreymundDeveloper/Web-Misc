@@ -37,6 +37,8 @@ $ npm i
 
 # To run applications
 $ npm start
+#Or in the case of Vue
+$ npm run serve
 
 # Tests (just in some apps)
 $ npm test
