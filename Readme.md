@@ -9,15 +9,21 @@ Set of varied small web applications. Some tecnologies used:
 * Next;
 * PHP;
 * Node;
+* Express;
 * React;
 * TailwindCSS;
 * Firebase;
 * Vue(2.x);
-* Jest.
+* Jest;
+* Ajax;
+* JQuery;
+* MongoDB;
+* Docker.
 
 Main applications present in the repository.
 
 * /Calculator_Is_Life: Calculators in different front-end Frameworks(React and Vue);
+* /Generic_Registrar: A simple registration CRUD, which runs through Docker and is linked to MongoDB;
 * /Html_Css_Cursos/Curso0: Generic web pages, made with pure HTML;
 * /Html_Css_Cursos/curso2/galeria_de_imagens: A gallery of images;
 * /Html_Css_Cursos/curso2/homepage: A simple homepage (portfolio style);
@@ -42,6 +48,9 @@ $ npm run serve
 
 # Tests (just in some apps)
 $ npm test
+
+# Docker (just in some apps)
+$ docker-compose up
 ```
 
 OBS: Much of the content was developed for educational purposes, based on courses, tutorials from the web and from my college.
