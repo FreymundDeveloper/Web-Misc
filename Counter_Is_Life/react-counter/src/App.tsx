@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
-import CounterValue from './components/CounterValue';
+import CounterMain from './components/CounterMain';
 
-function App() {
-  return (
-    <div className="App">
-      <CounterValue counter={0}/>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <CounterMain startedValue={0}/>
+      </div>
+    );
+    
+  }
 }
 
 export default App;
