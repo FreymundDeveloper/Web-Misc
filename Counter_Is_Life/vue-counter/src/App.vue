@@ -1,16 +1,18 @@
 <template>
   <div id="app">
     <CounterMain :startedValue="0"/>
+    <CounterClass />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import CounterMain from './components/CounterMain.vue';
+import CounterClass from './components/CounterClass.vue';
 
 @Component({
   components: {
-    CounterMain
+    CounterMain, CounterClass
   },
 })
 export default class App extends Vue {}
