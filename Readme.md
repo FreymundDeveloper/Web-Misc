@@ -23,7 +23,8 @@ Set of varied small web applications. Some tecnologies used:
 Main applications present in the repository.
 
 * /Calculator_Is_Life: Calculators in different front-end Frameworks(React and Vue);
-* /Generic_Registrar: A simple registration CRUD, which runs through Docker and is linked to MongoDB;
+* /Counter_Is_Life: Counters in different front-end Frameworks(React and Vue);
+* /Generic_Register: A simple registration CRUD, which runs through Docker and is linked to MongoDB;
 * /Html_Css_Cursos/Curso0: Generic web pages, made with pure HTML;
 * /Html_Css_Cursos/curso2/galeria_de_imagens: A gallery of images;
 * /Html_Css_Cursos/curso2/homepage: A simple homepage (portfolio style);
