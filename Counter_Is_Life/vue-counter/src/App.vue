@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <CounterMain :startedValue="0"/>
-    <CounterClass />
+    <CounterClass :startedValue="0" />
   </div>
 </template>
 
